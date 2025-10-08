@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Elements</title>
+</head>
+<body>
+
+  <h1>Media Examples</h1>
+
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="media/sample-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Video</h2>
+  <video controls width="640" height="360">
+    <source src="media/sample-video.mp4" type="video/mp4">
+    <track src="media/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Interactive Image Map</h2>
+  <img src="images/world-map.png" alt="Clickable world map" usemap="#worldmap" width="600">
+
+  <map name="worldmap">
+    <area shape="rect" coords="34,44,270,350" href="https://en.wikipedia.org/wiki/North_America" alt="North America">
+    <area shape="circle" coords="400,200,50" href="https://en.wikipedia.org/wiki/Europe" alt="Europe">
+  </map>
+
+</body>
+</html>
